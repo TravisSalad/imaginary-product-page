@@ -32,6 +32,7 @@ p {
 HEADER
 ***************/
 
+<<<<<<< HEAD
 .navigation {
  	width: 420px;
 	margin-left: auto;
@@ -41,6 +42,22 @@ HEADER
 
 .navigation li:hover {
 	color: lightgray;
+=======
+header {
+	background: #333333;
+	color: #FFFFFF;
+	height: 100px;
+}
+
+.navigation {
+	background: #E8E8E8;
+	width: 100%
+}
+
+.navigation li:hover {
+	text-decoration: underline;
+	color: gray;
+>>>>>>> 338a4bf029a984aa1b2da74ca43d85575941934c
 }
 
 /***************
@@ -48,23 +65,42 @@ INTRO
 ***************/
 
 .intro {
+<<<<<<< HEAD
+=======
+	background: #FDB913;
+>>>>>>> 338a4bf029a984aa1b2da74ca43d85575941934c
 	width: 100%;
 	overflow: hidden;
 }
 
+<<<<<<< HEAD
 .macbook {
 	position: relative;
 	float: left;
 	width: 70%;
+=======
+.logo {
+	position: relative;
+	float: left;
+	width: 50%;
+>>>>>>> 338a4bf029a984aa1b2da74ca43d85575941934c
 	height: auto;
 }
 
 .intro-text {
+<<<<<<< HEAD
 	position: absolute;
 	width: 500px;
 	text-align: center;
 	padding-top: 100px;
 	margin-left: 50%;
+=======
+	position: relative;
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding: 125px 20px 0 20px;
+>>>>>>> 338a4bf029a984aa1b2da74ca43d85575941934c
 }
 
 @media only screen and (max-width: 767px)
