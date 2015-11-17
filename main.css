@@ -1,8 +1,206 @@
 /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
+/***************
+GENERAL
+***************/
+
+h1 {
+	font-size: 80px;
+	padding-left: 20px;
+}
+
 body {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    color: green;
+	font-family: "open sans condensed" sans-serif serif;
+}
+
+h3 {
+	font-size: 80px;
+}
+
+p {
+	font-size: 30px;
+}
+
+.wrapper {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/***************
+HEADER
+***************/
+
+.navigation {
+ 	width: 420px;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+}
+
+.navigation li:hover {
+	color: lightgray;
+}
+
+/***************
+INTRO
+***************/
+
+.intro {
+	width: 100%;
+	overflow: hidden;
+}
+
+.macbook {
+	position: relative;
+	float: left;
+	width: 70%;
+	height: auto;
+}
+
+.intro-text {
+	position: absolute;
+	width: 500px;
+	text-align: center;
+	padding-top: 100px;
+	margin-left: 50%;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .logo, .intro-text
+    {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+.what-we-do {
+	position: relative;
+}
+
+/***************
+INTEGRATION
+***************/
+
+.integration {
+	width: 100%;
+	overflow: hidden;
+	padding-top: 50px;
+}
+
+.integration-text {
+	position: relative;
+	float: left;
+	text-align: center;
+	width: 50%;
+	padding-right: 25px;
+}
+
+.screen1 {
+	padding-left: 25px;
+	width:50%;
+	height: auto;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .integration-text, .screen1
+    {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+/***************
+EXPLAINER-VID
+***************/
+
+.explainer-vid-text {
+	width: 50%;
+	text-align: center;
+	margin-left: 50%;
+}
+
+.explainer-vid-text h3 {
+	text-align: center;
+}
+/***************
+TESTIMONIALS
+***************/
+
+/***************
+LOCATION
+***************/
+
+#map {
+	margin-top: 50px;
+	margin-right: 25px;
+	position: relative;
+	float: right;
+  width: 500px;
+	height: 400px;
+}
+.location {
+	background: #FFFFFF;
+	height: 500px;
+	width: 100%;
+	overflow: hidden;
+}
+.contact-info {
+	margin-top: 30px;
+	width: 50%;
+	position: absolute;
+	text-align: center;
+	padding-top: 75px;
+}
+
+.contact-info p {
+	padding-left: 30px;
+	font-size: 20px;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .contact-info, #map
+    {
+        display: block;
+        float: none;
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+/***************
+SIGN-UP
+***************/
+
+.form-control {
+	width: 450px;
+}
+
+.sign-up {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.submit {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/***************
+FOOTER
+***************/
+
+.footer {
+	clear: both;
 }
