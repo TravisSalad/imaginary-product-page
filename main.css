@@ -12,6 +12,8 @@ h1 {
 
 body {
 	font-family: "open sans condensed" sans-serif serif;
+	background-image: url('http://turbo.designwoop.com/uploads/2012/03/01_free_subtle_textures_apple_ios_linen_texture.jpg');
+	background-attachment: fixed;
 }
 
 h3 {
@@ -32,15 +34,20 @@ p {
 HEADER
 ***************/
 
-.navigation {
- 	width: 420px;
-	margin-left: auto;
-	margin-right: auto;
-	color: black;
+.navigation a {
+	color: white;
 }
 
-.navigation li:hover {
+.navigation a:hover {
 	color: lightgray;
+}
+
+.navigation ul {
+	margin: 0 0 0 0;
+}
+
+.navigation {
+	text-align: center;
 }
 
 /***************
@@ -136,14 +143,21 @@ TESTIMONIALS
 ***************/
 
 .testimonials {
+	background: rgba(60, 125, 166, 0.5);
 	border-top: 3px solid #3C7DA6;
 	border-bottom: 3px solid #3C7DA6;
-	background-image: url('http://turbo.designwoop.com/uploads/2012/03/01_free_subtle_textures_apple_ios_linen_texture.jpg');
+}
+
+.testimonials h2 {
+	text-align: center;
+	color: white;
+	margin: 15px 0 0 0;
+	
 }
 
 .test {
 	border-radius: 15px;
- 	border: 1px solid #3C7DA6; 
+ 	border: 2px solid #3C7DA6; 
 }
 
  ul.img-list li:nth-child(4) {
@@ -151,78 +165,72 @@ TESTIMONIALS
 }
 
 ul.img-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	text-align: center;
 }
 
 ul.img-list li {
-  display: inline-block;
-  height: 300px;
-  margin: 2em 2em 2em 0;
-  position: relative;
-  width: 220px;
+  	display: inline-block;
+  	height: 300px;
+	margin: 2em 2em 2em 0;
+  	position: relative;
+  	width: 220px;
 }
 
 span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 300px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 220px;
+  	background: rgba(0,0,0,0.5);
+  	color: white;
+  	cursor: pointer;
+  	display: table;
+  	height: 300px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 220px;
 }
 
 span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
+  	display: table-cell;
+  	text-align: center;
+  	vertical-align: middle;
 }
 
 span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 300px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 220px;
-  opacity: 0;
+  	background: rgba(0,0,0,0.5);
+  	color: white;
+  	cursor: pointer;
+  	display: table;
+  	height: 300px;
+  	left: 0;
+  	position: absolute;
+  	top: 0;
+  	width: 220px;
+  	opacity: 0;
 	border-radius: 15px;
 
 }
 
 ul.img-list li:hover span.text-content {
-  opacity: 1;
+  	opacity: 1;
 }
 
 span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 300px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 220px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-
-.item {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  	background: rgba(0,0,0,0.5);
+  	color: white;
+  	cursor: pointer;
+  	display: table;
+  	height: 300px;
+  	left: 0;
+  	position: absolute;
+  	top: 0;
+  	width: 220px;
+  	opacity: 0;
+  	-webkit-transition: opacity 500ms;
+  	-moz-transition: opacity 500ms;
+  	-o-transition: opacity 500ms;
+  	transition: opacity 500ms;
 }
 
 /***************
@@ -230,6 +238,7 @@ LOCATION
 ***************/
 
 #map {
+	float: left;
 	margin-top: 50px;
 	margin-right: 25px;
 	position: relative;
@@ -238,25 +247,26 @@ LOCATION
 	height: 400px;
 }
 .location {
-	background: #FFFFFF;
+	position: relative;
+	float: left;
+	background: rgba(60, 125, 166, 0.5);
 	height: 500px;
 	width: 100%;
 	overflow: hidden;
+	border-bottom: 3px solid white;
+	border-top: 3px solid white;
 }
 .contact-info {
-	margin-top: 30px;
+	position: relative;
+	float: left;
+	margin-top: 20px;
 	width: 50%;
-	position: absolute;
 	text-align: center;
 	padding-top: 75px;
+	color: white;
 }
 
-.contact-info p {
-	padding-left: 30px;
-	font-size: 20px;
-}
-
-@media only screen and (max-width: 767px)
+ @media only screen and (max-width: 767px)
 {
     .contact-info, #map
     {
@@ -265,22 +275,34 @@ LOCATION
         width: 100%;
         padding: 20px 0;
     }
-}
+} 
 
 /***************
 SIGN-UP
 ***************/
+
+.sign-up-title {
+	text-align: center;
+	color: white;
+}
 
 .form-control {
 	width: 450px;
 }
 
 .sign-up {
+	position: relative;
+	clear: both;
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+.sign-up-wrap {
+	width: 100%;
+	background: rgba(175, 175, 175, 0.5);
 }
 
 .submit {
