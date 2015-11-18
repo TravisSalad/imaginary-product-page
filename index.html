@@ -42,7 +42,7 @@
     <body>
         <!-- Note: If you do not see a lamp icon in the heading below
              when you view this file in a web browser, then there is an issue
-             with how Bootstrap is linked to this page. -->
+             with how Bootstrap is linked to this page. -->	
 		<div class="navigation">
 			<ul>
 				<li class="btn"><a href="index.html">Home</a></li>
@@ -52,7 +52,7 @@
 				<li class="btn"><a href="sign-up.html">Sign Up</a></li>
 			</ul>
 		</div>
-
+		
 		<div class="intro">
       		<div class="wrapper">
  				<img class="macbook" src="pictures/macbook.jpg"/>
@@ -63,6 +63,33 @@
       		</div>
       		</div>
 		</div>
+		
+		<div class="integration">
+      		<div class="wrapper">
+      		<div class="integration-text">
+      			<h3>Integration</h3>
+				<p class="int">Our smooth integration makes it easy to get started! Just enter your information below,
+					browse our API catalog, choose a library that best fits your businesses needs and click to purchase
+					a link to the API providers website.</p>
+      		</div>
+				<img class="screen1" src="assets/misc/screen1.png"/>
+      		</div>
+		</div>
+		
+		<div class="explainer-vid">
+      		<div class="wrapper">
+      		<div class="explainer-vid-text">
+      			<h3> About Us</h3>
+				<p class="exp-vid1">Never search for API's again!  API Superstore makes it easy by being a one-stop-shop
+					for all of your businesses Application Programming Interface needs.</p><br>
+				<p class="exp-vid2">Save time with API Superstore's revolutionary technology which puts the power in your
+					hands and provides all of the necessary tools to make you competitive in today's digital marketplace.</p><br>
+				<p class="exp-vid3">Ready to get started?  Contact us or fill out the form below to subscribe to API Superstore
+					today and take control of your businesses online reputation!</p>
+      		</div>
+      		</div>
+		</div>
+		
 		<div class="test-wrap">
 			<div class="testimonials">
 				<h3>Testimonials</h3>
@@ -78,16 +105,16 @@
   		</ol>
 
   	<div class="carousel-inner" role="listbox">
-    		<div class="item active">
-      			<img src="pictures/andrea_salad.jpg" alt="Andrea Salad">
-      		<div class="carousel-caption">
-				<h3 class="testimonial-title">Andrea Salad</h3>
-        		<p class="testimonial-description">The atmosphere in Chania has a touch of Florence and Venice.</p>
-      		</div>
-    		</div>
+    	<div class="item active">
+      		<img class="test-pic" style="height: 250px; width: auto;" src="pictures/test-1.jpg" alt="Andrea Salad">
+      	<div class="carousel-caption">
+			<h3 class="testimonial-title">Andrea Salad</h3>
+        	<p class="testimonial-description">The atmosphere in Chania has a touch of Florence and Venice.</p>
+      	</div>
+    	</div>
 
     	<div class="item">
-      		<img src="pictures/dori_fairbairn.jpg" alt="Dori Fairbairn">
+      		<img class="test-pic" style="height: 250px; width: auto;" src="pictures/test-2.jpg" alt="Dori Fairbairn">
       	<div class="carousel-caption">
 			<h3 class="testimonial-title">Dori Fairbairn</h3>
         	<p class="testimonial-description">The atmosphere in Chania has a touch of Florence and Venice.</p>
@@ -95,7 +122,7 @@
     	</div>
 
     	<div class="item">
-      		<img src="pictures/robert_strunk.jpg" alt="Robert Strunk">
+      		<img class="test-pic" style="height: 250px; width: auto;" src="pictures/test-3.jpg" alt="Robert Strunk">
       	<div class="carousel-caption">
 			<h3 class="testimonial-title">Robert Strunk</h3>
 			<p class="testimonial-description">Beatiful flowers in Kolymbari, Crete.</p>
@@ -103,7 +130,7 @@
     	</div>
 
     	<div class="item">
-      		<img src="pictures/travis_salad.jpg" alt="Travis Salad">
+      		<img class="test-pic" style="height: 250px; width: auto;" src="pictures/test-4.jpg" alt="Travis Salad">
       	<div class="carousel-caption">
 			<h3 class="testimonial-title">Travis Salad</h3>
 			<p class="testimonial-description">Beatiful flowers in Kolymbari, Crete.</p>
@@ -120,7 +147,65 @@
     	<span class="sr-only">Next</span>
   		</a>
 	</div>
-	
+		
+		<div class="location">
+      		<div class="wrapper">
+			<div id="map"></div>
+			<div class="contact-info">
+				<h3>Contact us</h3>
+				<p>We are located at 901 12th Ave. Seattle, WA 98121</p>
+				<p>888-888-8888</p>
+				<p>sales@apisuperstore.com</p>
+			</div>
+      		</div>
+		</div>
+		
+		<div class="sign-up">
+			<form>
+				<div class="form-group">
+    				<label for="exampleInputEmail1">Full Name</label>
+    				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="John Doe">
+  				</div>
+				<div class="form-group">
+    				<label for="exampleInputEmail1">Email address</label>
+    				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  				</div>
+				<div class="form-group">
+    				<label for="exampleInputEmail1">Credit Card Number</label>
+    				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Debit/Credit Card Number">
+  				</div>
+				<div class="form-group">
+    				<label for="exampleInputEmail1">Billing Zip</label>
+    				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Billing Zip">
+  				</div>
+				<button type="submit" class="submit btn btn-default">Submit</button>
+			</form>
+		</div>
+		
+		<div class="testimonials">
+			<ul class="img-list">
+				<li>
+					<img class="test"src="pictures/test-1.jpg" style="width: 220px; height: 300px;"/>
+      				<span class="text-content"><span>"This is THE BEST product on the market when it comes to web development!"
+					<br>-Andrea Strunk, Amazon.com</span></span>
+				</li>
+				<li>
+					<img class="test" src="pictures/test-2.jpg" style="width: 220px; height: 300px;"/>
+      				<span class="text-content"><span>"After speaking with Michael and the team at API superstore, I will never look again for my API solutions.  Thanks Michael!"
+					<br>-Paul Smith, Google.com</span></span>
+				</li>
+				<li>
+					<img class="test" src="pictures/test-3.jpg" style="width: 220px; height: 300px;"/>
+     				<span class="text-content"><span>"I am so lucky to have found this product! My life will never be the same!"
+					<br>-Robert Weinstein, Facebook.com</span></span>
+				</li>
+				<li>
+					<img class="test" src="pictures/test-4.jpg" style="width: 220px; height: 300px;"/>
+					<span class="text-content"><span>"Tired of your searching to find your favorite API's? API Superstore puts the power back in YOUR hands!"
+					<br>-Joe Barnsi, Target</span></span>
+				</li>
+			</ul>
+		</div>
 
 		<footer>
 			<div class="navigation">
@@ -156,6 +241,5 @@
 
         <!-- TODO: Create a call to action link to get users to sign up for the
          service. -->
-    </div>
     </body>
 </html>

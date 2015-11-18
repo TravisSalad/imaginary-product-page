@@ -134,6 +134,91 @@ EXPLAINER-VID
 TESTIMONIALS
 ***************/
 
+.testimonials {
+	border-top: 3px solid #3C7DA6;
+	border-bottom: 3px solid #3C7DA6;
+	background-image: url('http://turbo.designwoop.com/uploads/2012/03/01_free_subtle_textures_apple_ios_linen_texture.jpg');
+}
+
+.test {
+	border-radius: 15px;
+ 	border: 1px solid #3C7DA6; 
+}
+
+ ul.img-list li:nth-child(4) {
+	margin: 2em 0 2em 0;
+}
+
+ul.img-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul.img-list li {
+  display: inline-block;
+  height: 300px;
+  margin: 2em 2em 2em 0;
+  position: relative;
+  width: 220px;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 220px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 220px;
+  opacity: 0;
+	border-radius: 15px;
+
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 220px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+
 /***************
 LOCATION
 ***************/
@@ -143,7 +228,7 @@ LOCATION
 	margin-right: 25px;
 	position: relative;
 	float: right;
-  width: 500px;
+  	width: 500px;
 	height: 400px;
 }
 .location {
@@ -201,6 +286,6 @@ SIGN-UP
 FOOTER
 ***************/
 
-.footer {
+footer {
 	clear: both;
 }
