@@ -50,6 +50,7 @@ INTRO
 .intro {
 	width: 100%;
 	overflow: hidden;
+	background: black;
 }
 
 .macbook {
@@ -218,6 +219,11 @@ span.text-content {
   transition: opacity 500ms;
 }
 
+.item {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 
 /***************
 LOCATION
