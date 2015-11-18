@@ -26,7 +26,22 @@ p {
 
 .wrapper {
 	width: 90%;
-	max-width: 1600px;
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carousel-wrap {
+	background: rgba(60, 125, 166, 0.5);
+	width: 100%;
+	overflow: hidden;
+	border-top: 3px solid rgb(60, 125, 166);
+	border-bottom: 3px solid rgb(60, 125, 166);
+}
+
+.carousel-wrapper {
+	width: 100%;
+	max-width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -49,6 +64,7 @@ HEADER
 
 .navigation {
 	text-align: center;
+	background-color: #333333;
 }
 
 /***************
@@ -238,45 +254,29 @@ span.text-content {
 LOCATION
 ***************/
 
-#map {
-	float: left;
-	margin-top: 50px;
-	margin-right: 25px;
-	position: relative;
-	float: right;
-  	width: 500px;
-	height: 400px;
-}
 .location {
-	position: relative;
-	float: left;
 	background: rgba(60, 125, 166, 0.5);
-	height: 500px;
 	width: 100%;
 	overflow: hidden;
 	border-bottom: 3px solid white;
 	border-top: 3px solid white;
 }
-.contact-info {
-	position: relative;
-	float: left;
-	margin-top: 20px;
-	width: 50%;
-	text-align: center;
-	padding-top: 75px;
-	color: white;
+
+#map {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: 400px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
- @media only screen and (max-width: 767px)
-{
-    .contact-info, #map
-    {
-        display: block;
-        float: none;
-        width: 100%;
-        padding: 20px 0;
-    }
-} 
+.contact-info {
+	text-align: center;
+	color: white;
+	padding: 55px 0 0 0;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
 
 /***************
 SIGN-UP
@@ -285,16 +285,18 @@ SIGN-UP
 .sign-up-title {
 	text-align: center;
 	color: white;
+	margin: 0 0 0 0;
+	padding-top: 20px;
 }
 
 .form-control {
-	width: 450px;
+	width: 100%;
 }
 
 .sign-up {
 	position: relative;
 	clear: both;
-	width: 500px;
+	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
