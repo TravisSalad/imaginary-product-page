@@ -32,7 +32,7 @@ p {
 }
 
 .carousel-wrap {
-	background: rgba(60, 125, 166, 0.5);
+	background: rgba(60, 125, 166, 0.1);
 	width: 100%;
 	overflow: hidden;
 	border-top: 3px solid rgb(60, 125, 166);
@@ -160,7 +160,7 @@ TESTIMONIALS
 ***************/
 
 .testimonials {
-	background: rgba(60, 125, 166, 0.5);
+	background: rgba(60, 125, 166, 0.1);
 	border-top: 3px solid #3C7DA6;
 	border-bottom: 3px solid #3C7DA6;
 }
@@ -255,7 +255,7 @@ LOCATION
 ***************/
 
 .location {
-	background: rgba(60, 125, 166, 0.5);
+	background: rgba(60, 125, 166, 0.1);
 	width: 100%;
 	overflow: hidden;
 	border-bottom: 3px solid white;
@@ -305,7 +305,7 @@ SIGN-UP
 
 .sign-up-wrap {
 	width: 100%;
-	background: rgba(175, 175, 175, 0.5);
+	background: rgba(175, 175, 175, 0.1);
 }
 
 .submit {
