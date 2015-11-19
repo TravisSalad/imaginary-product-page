@@ -229,10 +229,17 @@ LOCATION
 }
 
 .contact-info {
+	margin-top: 135px;
 	text-align: center;
-	padding: 55px 0 0 0;
-	margin-top: 50px;
-	margin-bottom: 50px;
+}
+
+.contact-info p {
+ 	font-size: 150%;
+}
+
+.contact-info h3 {
+	font-size: 60px;
+	padding-bottom: 10px;
 }
 
 /***************
