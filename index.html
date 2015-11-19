@@ -40,21 +40,17 @@
     		</script>
     </head>
     <body>
-        <!-- Note: If you do not see a lamp icon in the heading below
-             when you view this file in a web browser, then there is an issue
-             with how Bootstrap is linked to this page. -->	
-		<div class="navigation">
+		<div class="container-fluid navigation">
 			<ul>
 				<li class="btn"><a href="index.html">Home</a></li>
 				<li class="btn"><a href="integration.html">Integration</a></li>
-				<li class="btn"><a href="learn-more.html">Learn More</a></li>
-				<li class="btn"><a href="location.html">Location</a></li>
+				<li class="btn"><a href="#learn-more">Learn More</a></li>
+				<li class="btn"><a href="#location">Location</a></li>
 				<li class="btn"><a href="sign-up.html">Sign Up</a></li>
 			</ul>
 		</div>
 		
-		<div class="carousel-wrap">
-		<div class="carousel-wrapper">	
+		<div class="container-fluid carousel-wrap">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -64,26 +60,23 @@
 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-				<img class="test-pic" src="pictures/office1.png" alt="Office">
+				<img class="carousel-pic" src="pictures/office1.png" alt="Office">
 			<div class="carousel-caption">
-				<h3 class="testimonial-title">Andrea Salad</h3>
-				<p class="testimonial-description">The atmosphere in Chania has a touch of Florence and Venice.</p>
+				<p class="carousel-caption">Save time, get API's!</p>
 			</div>
 			</div>
 
 			<div class="item">
 				<img class="carousel-pic" src="pictures/office2.jpg" alt="Office">
 			<div class="carousel-caption">
-				<h3 class="testimonial-title">Dori Fairbairn</h3>
-				<p class="testimonial-description">The atmosphere in Chania has a touch of Florence and Venice.</p>
+				<p class="carousel-caption">All the API's all the time!</p>
 			</div>
 			</div>
 
 			<div class="item">
-				<img class="test-pic" src="pictures/office3.jpg" alt="Office">
+				<img class="carousel-pic" src="pictures/office3.jpg" alt="Office">
 			<div class="carousel-caption">
-				<h3 class="testimonial-title">Robert Strunk</h3>
-				<p class="testimonial-description">Beatiful flowers in Kolymbari, Crete.</p>
+				<p class="carousel-caption">Click, click, code!</p>
 			</div>
 			</div>
 		</div>
@@ -96,7 +89,6 @@
 			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
 			</a>
-		</div>
 		</div>
 		</div>
 		
@@ -123,22 +115,27 @@
       		</div>
 		</div> -->
 		
-		<div class="explainer-vid">
+		<div class="container-fluid explainer-vid" id="learn-more">
       		<div class="wrapper">
-      		<div class="explainer-vid-text">
-      			<h3> About Us</h3>
-				<p class="exp-vid1">Never search for API's again!  API Superstore makes it easy by being a one-stop-shop
-					for all of your businesses Application Programming Interface needs.</p><br>
-				<p class="exp-vid2">Save time with API Superstore's revolutionary technology which puts the power in your
-					hands and provides all of the necessary tools to make you competitive in today's digital marketplace.</p><br>
-				<p class="exp-vid3">Ready to get started?  Contact us or fill out the form below to subscribe to API Superstore
-					today and take control of your businesses online reputation!</p>
-      		</div>
+				<div class="col-sx-6 video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/L48g1ZWLMdo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>				
+				</div>
+			<div class="col-sx-6 explainer-vid-text">
+				<ul>
+					<h4>About us</h4>
+					<li>Never search for API's again!  API Superstore makes it easy by being a one-stop-shop
+						for all of your businesses Application Programming Interface needs.</li>
+					<li>Save time with API Superstore's revolutionary technology which puts the power in your
+					hands and provides all of the necessary tools to make you competitive in today's digital marketplace</li>
+					<li>Ready to get started?  Contact us or fill out the form below to subscribe to API Superstore
+						today and take control of your businesses online reputation!</li>
+				</ul>
+       		</div>
       		</div>
 		</div>
 		
 		
-		<div class="location">
+		<div class="container-fluid" id="location">
       		<div class="wrapper">
 			<div class="col-xs-6" id="map"></div>
 			<div class="col-xs-6 contact-info">
@@ -150,32 +147,7 @@
       		</div>
 		</div>
 		
-		<div class="sign-up-wrap">
-			<h3 class="sign-up-title">Sign Up</h3>
-		<div class="sign-up">
-			<form>
-				<div class="form-group">
-    				<label for="exampleInputEmail1">Full Name</label>
-    				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="John Doe">
-  				</div>
-				<div class="form-group">
-    				<label for="exampleInputEmail1">Email address</label>
-    				<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-  				</div>
-				<div class="form-group">
-    				<label for="exampleInputEmail1">Credit Card Number</label>
-    				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Debit/Credit Card Number">
-  				</div>
-				<div class="form-group">
-    				<label for="exampleInputEmail1">Billing Zip</label>
-    				<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Billing Zip">
-  				</div>
-				<button type="submit" class="submit btn btn-default">Submit</button>
-			</form>
-		</div>
-		</div>
-		
-		<div class="testimonials">
+		<div class="container-fluid testimonials">
 			<h2>Testimonials</h2>
 			<ul class="img-list">
 				<li>
@@ -202,7 +174,38 @@
 		</div>
 
 		<footer>
-			
+			<div class="wrapper">
+			<div class="container-fluid footer">
+				<div class="col-xs-3 footer">
+					<ul class="foot-1">
+						<li><strong>blah blah</strong></li>
+						<li>blah blah</li>
+						<li>blah blah</li>
+					</ul>
+				</div>
+				<div class="col-xs-3 footer">
+					<ul class="foot-2">
+						<li><strong>blah blah</strong></li>
+						<li>blah blah</li>
+						<li>blah blah</li>
+					</ul>
+				</div>
+				<div class="col-xs-3 footer">
+					<ul class="foot-3">
+						<li><strong>blah blah</strong></li>
+						<li>blah blah</li>
+						<li>blah blah</li>
+					</ul>
+				</div>
+				<div class="col-xs-3 footer">
+					<ul class="foot-4">
+						<li><strong>blah blah</strong></li>
+						<li>blah blah</li>
+						<li>blah blah</li>
+					</ul>
+				</div>
+			</div>
+			</div>
 		</footer>
 
 

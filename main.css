@@ -14,14 +14,11 @@ body {
 	font-family: "open sans condensed" sans-serif serif;
 	background-image: url('http://turbo.designwoop.com/uploads/2012/03/01_free_subtle_textures_apple_ios_linen_texture.jpg');
 	background-attachment: fixed;
+	color: white;
 }
 
 h3 {
-	font-size: 80px;
-}
-
-p {
-	font-size: 30px;
+	margin: 0 0 0 0;
 }
 
 .wrapper {
@@ -31,18 +28,27 @@ p {
 	margin-right: auto;
 }
 
+.container-fluid {
+	padding: 0 0 0 0;
+}
+
+/***************
+CAROUSEL
+***************/
+
 .carousel-wrap {
 	background: rgba(60, 125, 166, 0.1);
 	width: 100%;
-	overflow: hidden;
-	border-bottom: 3px solid rgb(60, 125, 166);
-}
-
-.carousel-wrapper {
-	width: 100%;
 	max-width: 1300px;
+	overflow: hidden;
+	border-bottom: 1px solid white;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.carousel-caption {
+	font-size: 200%;
+	text-shadow: 2px 2px black;
 }
 
 /***************
@@ -51,14 +57,17 @@ HEADER
 
 .navigation a {
 	color: white;
+	font-size: 125%;
 }
 
 .navigation a:hover {
-	color: lightgray;
+	color: gray;
+	text-decoration: none;
 }
 
 .navigation ul {
 	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 
 .navigation {
@@ -66,82 +75,7 @@ HEADER
 	position: fixed;
 	z-index: 1;
 	text-align: center;
-	background: rgba(51, 51, 51, 0.5);
-}
-
-/***************
-INTRO
-***************/
-
-.intro {
-	width: 100%;
-	overflow: hidden;
-	background: black;
-}
-
-.macbook {
-	position: relative;
-	float: left;
-	width: 70%;
-	height: auto;
-}
-
-.intro-text {
-	position: absolute;
-	width: 500px;
-	text-align: center;
-	padding-top: 100px;
-	margin-left: 50%;
-}
-
-@media only screen and (max-width: 767px)
-{
-    .logo, .intro-text
-    {
-        display: block;
-        float: none;
-        width: 100%;
-        padding: 20px 0;
-    }
-}
-
-.what-we-do {
-	position: relative;
-}
-
-/***************
-INTEGRATION
-***************/
-
-.integration {
-	width: 100%;
-	overflow: hidden;
-	padding-top: 50px;
-}
-
-.integration-text {
-	position: relative;
-	float: left;
-	text-align: center;
-	width: 50%;
-	padding-right: 25px;
-}
-
-.screen1 {
-	padding-left: 25px;
-	width:50%;
-	height: auto;
-}
-
-@media only screen and (max-width: 767px)
-{
-    .integration-text, .screen1
-    {
-        display: block;
-        float: none;
-        width: 100%;
-        padding: 20px 0;
-    }
+	background: rgba(51, 51, 51, 0.8);
 }
 
 /***************
@@ -149,34 +83,56 @@ EXPLAINER-VID
 ***************/
 
 .explainer-vid-text {
-	width: 50%;
-	text-align: center;
-	margin-left: 50%;
+	position: relative;
+ 	float: right; 
+  	width: 50%;  
+	margin: 50px 0 50px 0;
+	padding-right: 30px;
+ 	border: 1px solid #3C7DA6; 
+	font-size: 135%;
+	min-height: 315px;
+	background: rgba(175, 175, 175, 0.3);
 }
 
-.explainer-vid-text h3 {
-	text-align: center;
+.explainer-vid-text h4 {
+	font-size: 150%;
 }
+
+.explainer-vid-text ul {
+	list-style: none;
+	margin-top: 5%;
+}
+
+.video {
+	position: relative;
+	float: left;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.explainer-vid {
+	background: rgba(58, 86, 81, 0.5)
+}
+
 /***************
 TESTIMONIALS
 ***************/
 
 .testimonials {
 	background: rgba(60, 125, 166, 0.1);
-	border-top: 3px solid #3C7DA6;
-	border-bottom: 3px solid #3C7DA6;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
 }
 
 .testimonials h2 {
 	text-align: center;
-	color: white;
 	margin: 15px 0 0 0;
 	
 }
 
 .test {
 	border-radius: 15px;
- 	border: 2px solid #3C7DA6; 
+ 	border: 1px solid white; 
 }
 
  ul.img-list li:nth-child(4) {
@@ -256,25 +212,24 @@ span.text-content {
 LOCATION
 ***************/
 
-.location {
+#location {
 	background: rgba(60, 125, 166, 0.1);
 	width: 100%;
 	overflow: hidden;
-	border-bottom: 3px solid white;
-	border-top: 3px solid white;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
 }
 
 #map {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	height: 400px;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .contact-info {
 	text-align: center;
-	color: white;
 	padding: 55px 0 0 0;
 	margin-top: 50px;
 	margin-bottom: 50px;
@@ -286,9 +241,7 @@ SIGN-UP
 
 .sign-up-title {
 	text-align: center;
-	color: white;
-	margin: 0 0 0 0;
-	padding-top: 20px;
+	margin: 20px 0 20px 0;
 }
 
 .form-control {
@@ -296,23 +249,19 @@ SIGN-UP
 }
 
 .sign-up {
-	position: relative;
-	clear: both;
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
-	padding-bottom: 50px;
+	text-align: center;
+}
+
+form {
+	margin-top: 30px;
 }
 
 .sign-up-wrap {
 	width: 100%;
-	background: rgba(175, 175, 175, 0.1);
-}
-
-.submit {
-	margin-left: auto;
-	margin-right: auto;
 }
 
 /***************
@@ -320,5 +269,15 @@ FOOTER
 ***************/
 
 footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
 	clear: both;
+	background: rgba(51,51,51, 0.8);
 }
+
+.footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+
