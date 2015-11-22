@@ -35,6 +35,16 @@ h3 {
 CAROUSEL
 ***************/
 
+header {
+	padding-top: 40px;
+}
+
+@media screen and (max-width: 392px) {
+	header {
+	padding-top: 80px;
+}		
+}
+
 .carousel-wrap {
 	background: rgba(60, 125, 166, 0.1);
 	width: 100%;
@@ -117,9 +127,8 @@ EXPLAINER-VID
 @media screen and (max-width: 650px) {
    .vid { 
     float: none;
-    margin-right:0;
 	width: auto;
-  }
+}
 }
 
 
@@ -239,7 +248,7 @@ span.text-content {
 
 @media screen and (max-width: 650px) {
 	ul.img-list li {
-	margin: 1em 0 1em 0;
+	margin: 2em 0 2em 0;
 }
 }
 
