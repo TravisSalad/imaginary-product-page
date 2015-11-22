@@ -47,8 +47,8 @@ CAROUSEL
 	text-shadow: 2px 2px black;
 }
 
-@media screen and (max-width: 400px) {
-.carousel-caption {
+@media screen and (max-width: 650px) {
+	.carousel-caption {
 	font-size: 100%;
 	text-shadow: none;
 }
@@ -114,7 +114,7 @@ EXPLAINER-VID
 	background: rgba(58, 86, 81, 0.5);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
    .vid { 
     float: none;
     margin-right:0;
@@ -123,8 +123,8 @@ EXPLAINER-VID
 }
 
 
-@media screen and (max-width: 400px) {
-.video {
+@media screen and (max-width: 650px) {
+	.video {
 	position:relative;
 	padding-bottom:56.25%;
 	padding-top:30px;
@@ -133,8 +133,8 @@ EXPLAINER-VID
 }
 }
 
-@media screen and (max-width: 400px) {
-.video iframe, .video object, .video embed {
+@media screen and (max-width: 650px) {
+	.video iframe, .video object, .video embed {
 	position:absolute;
 	top:0;
 	left:0;
