@@ -22,7 +22,6 @@ h3 {
 }
 
 .wrapper {
-	width: 90%;
 	max-width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
@@ -41,14 +40,18 @@ CAROUSEL
 	width: 100%;
 	max-width: 1300px;
 	overflow: hidden;
-	border-bottom: 1px solid white;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .carousel-caption {
 	font-size: 200%;
 	text-shadow: 2px 2px black;
+}
+
+@media screen and (max-width: 400px) {
+.carousel-caption {
+	font-size: 100%;
+	text-shadow: none;
+}
 }
 
 /***************
@@ -82,15 +85,19 @@ HEADER
 EXPLAINER-VID
 ***************/
 
+#learn-more {
+	width: 100%;
+}
+
+.vid {
+	max-width: 630px;
+	float: left;
+	margin: 5px;
+}
+
 .explainer-vid-text {
-	position: relative;
- 	float: right; 
-  	width: 50%;  
-	margin: 50px 0 50px 0;
-	padding-right: 30px;
  	border: 1px solid #3C7DA6; 
 	font-size: 135%;
-	min-height: 315px;
 	background: rgba(175, 175, 175, 0.3);
 }
 
@@ -103,15 +110,37 @@ EXPLAINER-VID
 	margin-top: 5%;
 }
 
-.video {
-	position: relative;
-	float: left;
-	margin-top: 50px;
-	margin-bottom: 50px;
+.explainer-vid {
+	background: rgba(58, 86, 81, 0.5);
 }
 
-.explainer-vid {
-	background: rgba(58, 86, 81, 0.5)
+@media screen and (max-width: 400px) {
+   .vid { 
+    float: none;
+    margin-right:0;
+	width: auto;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+.video {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+}
+
+@media screen and (max-width: 400px) {
+.video iframe, .video object, .video embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
 }
 
 /***************
