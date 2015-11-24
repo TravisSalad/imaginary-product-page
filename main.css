@@ -36,20 +36,20 @@ CAROUSEL
 ***************/
 
 header {
-	padding-top: 40px;
+ 	padding-top: 39px; 
 }
 
 @media screen and (max-width: 392px) {
 	header {
-	padding-top: 80px;
+	padding-top: 78px;
 }		
 }
 
 .carousel-wrap {
-	background: rgba(60, 125, 166, 0.1);
 	width: 100%;
 	max-width: 1300px;
 	overflow: hidden;
+	border-bottom: 1px solid white;
 }
 
 .carousel-caption {
@@ -65,7 +65,7 @@ header {
 }
 
 /***************
-HEADER
+NAVIGATION
 ***************/
 
 .navigation a {
@@ -95,8 +95,11 @@ HEADER
 EXPLAINER-VID
 ***************/
 
- #learn-more {
+ #about-us {
 	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background: rgba(58, 86, 81, 0.2); 
 } 
 
 .vid {
@@ -106,9 +109,7 @@ EXPLAINER-VID
 }
 
 .explainer-vid-text {
- 	border: 1px solid #3C7DA6; 
 	font-size: 135%;
-	background: rgba(175, 175, 175, 0.3);
 	min-height: 354px;
 }
 
@@ -119,10 +120,6 @@ EXPLAINER-VID
 .explainer-vid-text ul {
 	list-style: none;
 	margin-top: 5%;
-}
-
-.explainer-vid {
-	background: rgba(58, 86, 81, 0.5);
 }
 
 @media screen and (max-width: 650px) {
@@ -154,13 +151,32 @@ EXPLAINER-VID
 }
 
 /***************
+LEARN MORE
+***************/
+
+#learn-more {
+	text-align: center;
+	border-top: 1px solid white;
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background: rgba(134, 220, 199, 0.3); 
+} 
+
+.caption {
+	padding: 10px;
+	border-radius: 10px;
+	min-height: 325px;
+}
+
+
+/***************
 TESTIMONIALS
 ***************/
 
 .testimonials {
-	background: rgba(60, 125, 166, 0.1);
+	background: rgba(58, 86, 81, 0.2); 
 	border-top: 1px solid white;
-	border-bottom: 1px solid white;
 }
 
 .testimonials h2 {
@@ -171,7 +187,6 @@ TESTIMONIALS
 
 .test {
 	border-radius: 15px;
- 	border: 1px solid white; 
 }
 
  ul.img-list li:nth-child(4) {
@@ -322,6 +337,7 @@ FOOTER
 ***************/
 
 footer {
+	border-top: 1px solid white;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	clear: both;
