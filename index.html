@@ -23,19 +23,6 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
-     		<script>
-      		function initialize() {
-        	var mapCanvas = document.getElementById('map');
-        	var mapOptions = {
-          		center: new google.maps.LatLng(47.6095756, -122.3177647),
-          		zoom: 14,
-          		mapTypeId: google.maps.MapTypeId.ROADMAP
-        		}
-        		var map = new google.maps.Map(mapCanvas, mapOptions)
-     			}
-      			google.maps.event.addDomListener(window, 'load', initialize);
-    		</script>
     </head>
     <body>
 		
@@ -94,10 +81,10 @@
 		</div>
 	</header>
 		
-	<div class="container-fluid explainer-vid wrapper" id="about-us">
-		<div class="video vid">
+	<div class="container-fluid explainer-vid wrapper row" id="about-us">
+		<div class="col-md-6 col-sm-12 col-xs-12 video vid">
 			<iframe width="630" height="354" src="https://www.youtube.com/embed/L48g1ZWLMdo?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>			</div>
-		<div class="explainer-vid-text vid">
+		<div class="col-md-6 col-sm-12 col-xs-12 explainer-vid-text vid">
 			<ul>
 				<h4>About us</h4>
 				<li>Never search for API's again!  API Superstore makes it easy by being a one-stop-shop
@@ -111,7 +98,7 @@
 	</div>
 		
 	<div class="container-fluid wrapper row" id="learn-more">
-		<div class="col-md-4 learn">
+		<div class="col-md-4 col-sm-12 col-xs-12 learn">
 			<div class="caption">
 			<h3>What is an API?</h3>
 			
@@ -128,7 +115,7 @@
 			</div>
 		</div>
 		
-		<div class="col-md-4 learn">
+		<div class="col-md-4 col-sm-12 col-xs-12 learn">
 			<div class="caption">
 			<h3>How are API's used?</h3>
 				
@@ -142,7 +129,7 @@
 			</div>
 		</div>
 		
-		<div class="col-md-4 learn">
+		<div class="col-md-4 col-sm-12 col-xs-12 learn">
 			<div class="caption">
 			<h3>Integration</h3>
 			

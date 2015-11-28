@@ -95,7 +95,7 @@ NAVIGATION
 EXPLAINER-VID
 ***************/
 
- #about-us {
+#about-us {
 	width: 100%;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -148,7 +148,7 @@ EXPLAINER-VID
 	width:100%;
 	height:100%;
 }
-}
+} 
 
 /***************
 LEARN MORE
@@ -274,11 +274,9 @@ LOCATION
 ***************/
 
 #location {
-	background: rgba(60, 125, 166, 0.1);
 	width: 100%;
 	overflow: hidden;
-	border-bottom: 1px solid white;
-	border-top: 1px solid white;
+	padding-top: 100px;
 }
 
 #map {
@@ -291,6 +289,7 @@ LOCATION
 
 .contact-info {
 	margin-top: 135px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 
@@ -322,6 +321,12 @@ SIGN-UP
 	margin-right: auto;
 	padding-top: 50px;
 	text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+	.sign-up {
+	margin-top: 2em;
+}
 }
 
 form {
