@@ -5,11 +5,6 @@
 GENERAL
 ***************/
 
-h1 {
-	font-size: 80px;
-	padding-left: 20px;
-}
-
 body {
 	font-family: "open sans condensed" sans-serif serif;
 	background-image: url('http://turbo.designwoop.com/uploads/2012/03/01_free_subtle_textures_apple_ios_linen_texture.jpg');
@@ -17,8 +12,12 @@ body {
 	color: white;
 }
 
-h3 {
-	margin: 0 0 0 0;
+p {
+	font-size: 135%;
+}
+
+li {
+	font-size: 135%;
 }
 
 .wrapper {
@@ -36,10 +35,10 @@ CAROUSEL
 ***************/
 
 header {
- 	padding-top: 39px; 
+  	padding-top: 39px;
 }
 
-@media screen and (max-width: 392px) {
+@media screen and (max-width: 408px) {
 	header {
 	padding-top: 78px;
 }		
@@ -101,21 +100,6 @@ EXPLAINER-VID
 	padding-bottom: 25px;
 	background: rgba(58, 86, 81, 0.2); 
 } 
-
-.vid {
-	max-width: 630px;
-	float: left;
-	margin: 5px;
-}
-
-.explainer-vid-text {
-	font-size: 135%;
-	min-height: 354px;
-}
-
-.explainer-vid-text h4 {
-	font-size: 150%;
-}
 
 .explainer-vid-text ul {
 	list-style: none;
@@ -323,7 +307,7 @@ SIGN-UP
 	text-align: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 408px) {
 	.sign-up {
 	margin-top: 2em;
 }
@@ -354,4 +338,11 @@ footer {
 	padding: 0;
 }
 
+.footer li {
+	font-size: 100%;
 
+}
+
+.get-bs {
+	float: right;
+}
