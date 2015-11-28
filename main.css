@@ -134,18 +134,21 @@ LEARN MORE
 ***************/
 
 #learn-more {
-	text-align: center;
 	border-top: 1px solid white;
 	width: 100%;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	background: rgba(134, 220, 199, 0.3); 
+	background: rgba(58, 86, 81, 0.2); 
 } 
 
 .caption {
 	padding: 10px;
 	border-radius: 10px;
-	min-height: 325px;
+	min-height: 527px;
+	background: rgba(134, 220, 199, 0.3); 
+}
+
+.learn {
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 /***************
