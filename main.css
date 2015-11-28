@@ -101,12 +101,7 @@ EXPLAINER-VID
 	background: rgba(58, 86, 81, 0.2); 
 } 
 
-.explainer-vid-text ul {
-	list-style: none;
-	margin-top: 5%;
-}
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 630px) {
    .vid { 
     float: none;
 	width: auto;
@@ -114,7 +109,7 @@ EXPLAINER-VID
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 630px) {
 	.video {
 	position:relative;
 	padding-bottom:56.25%;
@@ -124,7 +119,7 @@ EXPLAINER-VID
 }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 630px) {
 	.video iframe, .video object, .video embed {
 	position:absolute;
 	top:0;
@@ -152,7 +147,6 @@ LEARN MORE
 	border-radius: 10px;
 	min-height: 325px;
 }
-
 
 /***************
 TESTIMONIALS
