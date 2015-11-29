@@ -1,6 +1,3 @@
-/* Styles for Product Page Customization */
-/* NOTE: Do not edit the Bootstrap CSS files. */
-
 /***************
 GENERAL
 ***************/
@@ -20,15 +17,36 @@ li {
 	font-size: 135%;
 }
 
+h2 {
+	padding-bottom: 5px;
+}
+
 .wrapper {
 	max-width: 1300px;
 	margin-left: auto;
 	margin-right: auto;
+	background: rgba(58, 86, 81, 0.2); 
 }
 
-.container-fluid {
-	padding: 0 0 0 0;
+.container {
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
+
+.caption {
+	padding: 10px;
+	border-radius: 10px;
+	background: rgba(134, 220, 199, 0.3); 
+}
+
+button {
+	margin-top: 10px;
+}
+
+button a:hover {
+	text-decoration: none;
+}
+
 
 /***************
 CAROUSEL
@@ -38,7 +56,7 @@ header {
   	padding-top: 39px;
 }
 
-@media screen and (max-width: 408px) {
+@media screen and (max-width: 423px) {
 	header {
 	padding-top: 78px;
 }		
@@ -49,6 +67,8 @@ header {
 	max-width: 1300px;
 	overflow: hidden;
 	border-bottom: 1px solid white;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .carousel-caption {
@@ -98,7 +118,6 @@ EXPLAINER-VID
 	width: 100%;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	background: rgba(58, 86, 81, 0.2); 
 } 
 
 @media screen and (max-width: 630px) {
@@ -135,20 +154,44 @@ LEARN MORE
 
 #learn-more {
 	border-top: 1px solid white;
-	width: 100%;
-	background: rgba(58, 86, 81, 0.2); 
-} 
-
-.caption {
-	padding: 10px;
-	border-radius: 10px;
-	min-height: 527px;
-	background: rgba(134, 220, 199, 0.3); 
+	border-bottom: 1px solid white;
 }
 
-.learn {
-	padding-top: 25px;
-	padding-bottom: 25px;
+/***************
+SIGN-UP
+***************/
+
+#sign-up {
+	text-align: center;
+}
+
+/***************
+ASIDE
+***************/
+
+.logo {
+	width: 25px;
+	height: 25px;
+}
+.logo-2 {
+	margin-top:10px;
+}
+
+.social {
+	position: fixed;
+	z-index: 1;
+	right: 5px;
+	top: 39px;
+}
+
+.social-list {
+	list-style: none;
+}
+
+@media screen and (max-width: 423px) {
+	.social {
+	top: 78px;
+}
 }
 
 /***************
@@ -258,6 +301,7 @@ LOCATION
 	width: 100%;
 	overflow: hidden;
 	padding-top: 100px;
+	background: none;
 }
 
 #map {
