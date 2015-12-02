@@ -317,6 +317,7 @@ SIGN-UP
 	margin-right: auto;
 	padding-top: 50px;
 	text-align: center;
+	margin-bottom: 50px;
 }
 
 @media screen and (max-width: 408px) {
