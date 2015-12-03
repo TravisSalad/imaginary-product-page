@@ -391,3 +391,9 @@ footer {
 .login-button {
 	margin-right: 20px;
 }
+
+@media screen and (max-width: 767px) {
+	.social {
+	border-left: none;
+}
+}
